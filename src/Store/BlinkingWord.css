@@ -1,0 +1,15 @@
+@keyframes blinking-animation {
+    0% {
+        color: black;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.blinking-word {
+    animation: blinking-animation 1s infinite;
+}

@@ -1,0 +1,197 @@
+.home-header {
+    background-image: url("https://phonoteka.org/uploads/posts/2022-02/1645305794_1-phonoteka-org-p-anime-fon-dlya-prevyu-1.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: firebrick;
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.blinking-word {
+    position: relative;
+    display: inline-block;
+    animation: color-change-animation 5s infinite;
+}
+
+.blinking-word::after {
+    content: 'Аниме';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes color-change-animation {
+    0% { color: firebrick; }
+    25% { color: purple; }
+    50% { color: blue; }
+    75% { color: green; }
+    100% { color: firebrick; }
+}
+
+body {
+    background-image: url('https://phonoteka.org/uploads/posts/2022-02/1645305794_1-phonoteka-org-p-anime-fon-dlya-prevyu-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards-home {
+    display: flex;
+    margin: 50px 15%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    margin: 0px 20%;
+    gap: 40px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header a
+@keyframes blink-animation {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.blink-text {
+    animation: blink-animation 1s infinite;
+    color: red;
+    width: 500px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Yu Gothic', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+
+.header a:hover {
+    font-size: 1.1rem;
+    transition: 0.3s all;
+}
+
+.lds-spinner {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: purple;
+}
+
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.products {
+    display: flex;
+    margin: 40px 15%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about {
+    display: block;
+    margin: 40px 20% 60px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 8px;
+}
